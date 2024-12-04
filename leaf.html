@@ -11,18 +11,25 @@
             margin: 0;
             font-family: 'moneyFont';
         }
-
+        
         header {
-            background-color: #ceecff; /* 헤더 배경 색상 */
-            padding: 30px;
+            background-color: #ffffff; /* 헤더 배경 색상 */
+            padding: 15px; /* 기존 30px에서 줄임 */
             text-align: center;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 */
         }
+        
         header img {
-            width: 300px;
+            width: 200px;
             height: auto;
             vertical-align: middle;
         }
+
+        header h3 {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
         .layout {
             display: flex;
             width: 100%;
@@ -32,7 +39,7 @@
 
         main {
             flex: 3;
-            background-color: #ffffff; /* 메인 배경 색상 */
+            background-color: #ceecff; /* 메인 배경 색상 */
             padding: 30px;
             display: flex;
             flex-direction: column;
@@ -45,18 +52,20 @@
             gap: 20px;
             width: 100%;
             max-width: 1000px;
+            text-align: center;
         }
         .content img {
             width: 100%;
             height: auto;
-            border-radius: 10px;
-            margin-bottom: 10px;
+            border-radius: 10px; /* 모서리 */
+            margin-top: 20px;
+            margin-bottom: 5px;
         }
-        .content img h3 {
+        .content h3 {
            font-size: 1.2em;
            margin-bottom: 8px;
         }
-        .content img p {
+        .content p {
            font-size: 0.9em;
            color: black;
         }
@@ -66,9 +75,8 @@
             background-color: #f0f0f0; /* 사이드바 배경 색상 */
             padding: 10px;
             box-sizing: border-box;
-            text-align: center;
         }
-
+        
         aside h3 {
             font-size: 1.5em;
             margin-bottom: 10px;
@@ -78,7 +86,12 @@
             font-size: 1em;
             color: #555;
         }
-
+        aside .nav {
+            position: fixed;
+            text-align: center;
+            top: 30%;
+            left: 85%;
+        }
         aside .nav a {
             margin: 0 15px;
             font-size: 1.2em;
@@ -90,39 +103,61 @@
         aside .nav a:hover {
             color: #0000ff;
         }
+        aside .back-home {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #ffcccb; /* 박스 배경색 (연한 빨강) */
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 */
+        }
 
+        aside .back-box a {
+            font-size: 1.2em;
+            color: #333; /* 텍스트 색상 */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        aside .back-home a:hover {
+            color: #ff0000; /* 호버 시 텍스트 색상 (빨강) */
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="로고_배경x.jpg" alt="로고">
+        <img src="로고.jpg" alt="로고">
         <h3>[카테고리]에 대해 설명하세요.</h3>
         <h3>[카테고리]에 대해 설명하세요.</h3>
     </header>
     <div class="layout">
         <main>
-            <div class = "content">
+            <div class="content">
                 <img src="겨울1.jpg" alt="겨울1">
                 <h3>사진 1 제목 - </h3>
                 <p>사진 1에 대한 소개글을 여기에 입력하세요. 옷에 대한 내용입니다.</p>
                 <p>사진 1에 대한 소개글을 여기에 입력하세요. 옷에 대한 내용입니다.</p>
                 <p>사진 1에 대한 소개글을 여기에 입력하세요. 옷에 대한 내용입니다.</p>
                 <p>사진 1에 대한 소개글을 여기에 입력하세요. 옷에 대한 내용입니다.</p>
-
+            </div>
+            <div class="content">
                 <img src="겨울1.jpg" alt="겨울1">
                 <h3>사진 1 제목 - </h3>
                 <p>사진 1에 대한 소개글을 여기에 입력하세요. 옷에 대한 내용입니다.</p>
                 <p>사진 1에 대한 소개글을 여기에 입력하세요. 옷에 대한 내용입니다.</p>
                 <p>사진 1에 대한 소개글을 여기에 입력하세요. 옷에 대한 내용입니다.</p>
                 <p>사진 1에 대한 소개글을 여기에 입력하세요. 옷에 대한 내용입니다.</p>
-
+            </div>
+            <div class="content">
                 <img src="겨울1.jpg" alt="겨울1">
                 <h3>사진 1 제목 - </h3>
                 <p>사진 1에 대한 소개글을 여기에 입력하세요. 옷에 대한 내용입니다.</p>
                 <p>사진 1에 대한 소개글을 여기에 입력하세요. 옷에 대한 내용입니다.</p>
                 <p>사진 1에 대한 소개글을 여기에 입력하세요. 옷에 대한 내용입니다.</p>
                 <p>사진 1에 대한 소개글을 여기에 입력하세요. 옷에 대한 내용입니다.</p>
-
+            </div>
+            <div class="content">
                 <img src="겨울1.jpg" alt="겨울1">
                 <h3>사진 1 제목 - </h3>
                 <p>사진 1에 대한 소개글을 여기에 입력하세요. 옷에 대한 내용입니다.</p>
@@ -138,6 +173,9 @@
                 <p><a href="목도리.html">- 목도리</a></p>
                 <p><a href="비니.html">- 비니</a></p>
                 <p><a href="코스튬.html">- 코스튬</a></p>
+                <div class="back-home">
+                    <a href="home.html">메인 페이지</a>
+                </div>
             </nav>
         </aside>
     </div>
