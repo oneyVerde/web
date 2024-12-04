@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>겨울</title>
+    <style>
+        /* 폰트 */
+        @font-face {
+            font-family: 'moneyFont';
+            src: url('Moneygraphy-Rounded.ttf');
+        }
+        body {
+            margin: 0;
+            font-family: 'moneyFont';
+        }
+
+        /* 상단 로고 및 제목 */
+        header {
+            background-color: white; /* 헤더 배경 색상 */
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 */
+        }
+        /* 로고 */
+        header img {
+            width: 300px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        /* 목차 스타일 */
+        .nav {
+            margin-top: 40px;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .nav a {
+            margin: 0 15px;
+            font-size: 1.2em;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            color: #555;
+        }
+
+        .nav a:not(:last-child)::after {
+            content: '|';
+            margin-left: 30px;
+            color: #333;
+        }
+
+        /* 메인 레이아웃 */
+        .layout {
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 3;
+            background-color: #ceecff; /* 메인 배경 색상 */
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* 메인 콘텐츠: 사진과 소개글 */
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .content .item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .content .item h3 {
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+
+        .content .item p {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* 메인 콘텐츠 링크 */
+        .more-link {
+            display: block;
+            margin-top: 10px;
+            text-align: right;
+            color: #808080;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        /* 마우스 가져다대면 파란색 */
+        .more-link:hover {
+            color: #0000ff;
+        }
+
+        /* 사이드바 */
+        aside {
+            flex: 1;
+            background-color: #f0f0f0; /* 사이드바 배경 색상 */
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        aside h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        aside p {
+            font-size: 1em;
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 상단 헤더: 로고/소개/목차 -->
+    <header>
+        <img src="로고.jpg" alt="로고">
+        <h3>snowman이 운영하는 블로그입니다.</h3>
+        <h3>따뜻한 겨울나기 알려드립니다.</h3>
+        <nav class="nav">
+            <a href="#clothes">옷</a>
+            <a href="#food">먹거리</a>
+            <a href="#travel">여행</a>
+            <a href="#entertainment">놀거리</a>
+        </nav>
+    </header>
+
+    <!-- 메인 -->
+    <div class="layout">
+        <!-- 메인 콘텐츠: 사진/소개글/목차페이지링크 -->
+        <main>
+            <div class="content">
+                <div class="item" id="clothes">
+                    <img src="겨울1.jpg" alt="겨울1">
+                    <h3>사진 1 제목 - </h3>
+                    <p>사진 1에 대한 소개글을 여기에 입력하세요. 옷에 대한 내용입니다.</p>
+                    <p>사진 1에 대한 소개글을 여기에 입력하세요. 옷에 대한 내용입니다.</p>
+                    <p>사진 1에 대한 소개글을 여기에 입력하세요. 옷에 대한 내용입니다.</p>
+                    <p>사진 1에 대한 소개글을 여기에 입력하세요. 옷에 대한 내용입니다.</p>
+                    <a href="#clothes-details" class="more-link">→ '옷' 바로가기</a>
+                </div>
+                <div class="item" id="food">
+                    <img src="겨울2.jpg" alt="겨울2">
+                    <h3>사진 2 제목 - </h3>
+                    <p>사진 2에 대한 소개글을 여기에 입력하세요. 먹거리에 대한 내용입니다.</p>
+                    <p>사진 2에 대한 소개글을 여기에 입력하세요. 먹거리에 대한 내용입니다.</p>
+                    <p>사진 2에 대한 소개글을 여기에 입력하세요. 먹거리에 대한 내용입니다.</p>
+                    <p>사진 2에 대한 소개글을 여기에 입력하세요. 먹거리에 대한 내용입니다.</p>
+                    <p>사진 2에 대한 소개글을 여기에 입력하세요. 먹거리에 대한 내용입니다.</p>
+                    <a href="#clothes-details" class="more-link">→ '음식' 바로가기</a>
+
+                </div>
+                <div class="item" id="travel">
+                    <img src="무도_고함.jpg" alt="무도_고함">
+                    <h3>사진 3 제목 - 여행</h3>
+                    <p>사진 3에 대한 소개글을 여기에 입력하세요. 여행에 대한 내용입니다.</p>
+                    <p>사진 3에 대한 소개글을 여기에 입력하세요. 여행에 대한 내용입니다.</p>
+                    <p>사진 3에 대한 소개글을 여기에 입력하세요. 여행에 대한 내용입니다.</p>
+                    <p>사진 3에 대한 소개글을 여기에 입력하세요. 여행에 대한 내용입니다.</p>
+                    <p>사진 3에 대한 소개글을 여기에 입력하세요. 여행에 대한 내용입니다.</p>
+                    <a href="#clothes-details" class="more-link">→ '여행' 바로가기</a>
+                </div>
+                <div class="item" id="entertainment">
+                    <img src="눈속나무.jpg" alt="눈속나무">
+                    <h3>사진 4 제목 - 놀거리</h3>
+                    <p>사진 4에 대한 소개글을 여기에 입력하세요. 놀거리 관련 내용입니다.</p>
+                    <p>사진 4에 대한 소개글을 여기에 입력하세요. 놀거리 관련 내용입니다.</p>
+                    <p>사진 4에 대한 소개글을 여기에 입력하세요. 놀거리 관련 내용입니다.</p>
+                    <p>사진 4에 대한 소개글을 여기에 입력하세요. 놀거리 관련 내용입니다.</p>
+                    <a href="#clothes-details" class="more-link">→ '놀거리' 바로가기</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- 사이드바: intro소개/눈사람투표/읽을거리 등 -->
+        <aside>
+            <h3>Intro.</h3>
+            <p>첫눈부터 겨울을 실감하게 된 올해,</p>
+            <p>폭닥하고 따뜻하게 겨울나는 방법들 </p>
+        </aside>
+    </div>
+</body>
+</html>
