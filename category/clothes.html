@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>겨울나기 옷</title>
+        <style>
+            @font-face {
+            font-family: 'moneyFont';
+            src: url('../font/Moneygraphy-Rounded.ttf');
+        }
+        body {
+            margin: 0;
+            font-family: 'moneyFont';
+        }
+        header {
+            background-color: white; /* 헤더 배경 색상 */
+            padding: 50px;
+        }
+
+        .layout {
+            background-color: #ceecff; /* 메인 배경 색상 */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+        }
+        .content {
+            padding: 30px;
+            display: flex;
+            width: 1200px;
+            gap: 70px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .item {
+            background-color: white;
+            width: 300px; height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+        }
+        footer {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.7em;
+            color: #808080;
+            padding: 20px;
+        }
+        .image_container{
+            width: 270px; height: 270px;
+            overflow: hidden; /* 이미지가 컨테이너 사이즈 넘어갈 시 자르기 */
+        }
+        .image_container > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 이미지 컨테이너에 꽉 채워지도록 조정 */
+        }
+        .item > a {
+            color: black;
+            padding: 20px;
+            font-size: 1.5em;
+        }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>겨울나기 옷</h1>
+            <h2>방한 필수품 모음집</h2>
+        </header>
+        <div class="layout">
+            <div class="content">
+                <div class="item" id="gloves">
+                    <div class="image_container">
+                        <img src="../images/gloves.jpeg">
+                    </div>
+                    <a href="">장갑</a>
+                </div>
+                <div class="item" id="muffler">
+                    <div class="image_container">
+                        <img src="../images/muffler.jpeg">
+                    </div>
+                    <a href="">목도리</a>
+                </div>
+                <div class="item" id="beanie">
+                    <div class="image_container">
+                        <img src="../images/hat.jpg">
+                    </div>
+                    <a href="">비니</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>겨울나기 블로그 카테고리 페이지입니다.</p>
+            <p>Copyright 이영서, 정헌희</p>
+        </footer>
+    </body>
+</html>
