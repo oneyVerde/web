@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>여가</title>
+    <style>
+        @font-face {
+            font-family: 'moneyFont';
+            src: url('../font/Moneygraphy-Rounded.ttf');
+        }
+        body {
+            margin: 0;
+            font-family: 'moneyFont';
+        }
+        
+        header {
+            background-color: #ffffff; /* 헤더 배경 색상 */
+            padding: 15px; /* 기존 30px에서 줄임 */
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 */
+        }
+        
+        header img {
+            width: 200px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        header h3 {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
+        .layout {
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 3;
+            background-color: #ceecff; /* 메인 배경 색상 */
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* 모서리 */
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        .content h3 {
+           font-size: 1.2em;
+           margin-bottom: 8px;
+           font-weight: bold;
+        }
+        .content p {
+           font-size: 0.9em;
+           color: black;
+        }
+
+        aside {
+            flex: 0.7;
+            background-color: #f0f0f0; /* 사이드바 배경 색상 */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        aside h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        aside p {
+            font-size: 1em;
+            color: #555;
+        }
+        aside .nav {
+            position: fixed;
+            text-align: center;
+            top: 30%;
+            left: 85%;
+        }
+        aside .nav a {
+            margin: 0 15px;
+            font-size: 1.2em;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+        aside .nav a:hover {
+            color: #0000ff;
+        }
+        aside .back-home {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #ffcccb; /* 박스 배경색 (연한 빨강) */
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 */
+        }
+
+        aside .back-box a {
+            font-size: 1.2em;
+            color: #333; /* 텍스트 색상 */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        aside .back-home a:hover {
+            color: #ff0000; /* 호버 시 텍스트 색상 (빨강) */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/로고.jpg" alt="로고">
+        <h3>겨울은 차가운 바람과 눈 덮인 풍경이 특징인 계절입니다.</h3>
+        <h3>그런 겨울을 더욱 특별하게 만들어주는 것이 바로 겨울 영화입니다. </h3>
+    </header>
+    <div class="layout">
+        <main>
+            <div class="content">
+                <h3>겨울 영화</h3>
+                <p>겨울 영화는 차가운 날씨 속에서 따뜻한 감정을 불러일으키며, 종종 사랑, 희망, 가족의 의미를 되새기는 이야기를 담고 있습니다.</p>
+                <p>올해 겨울 소개해드리는 영화를 보면서, 소중한 사람들과 행복한 시간을 보내세요.</p>
+            </div>
+            <div class="content" id="love">
+                <img src="../images/러브액츄얼리.jpg">
+                <h3>Love actuaally</h3>
+                <p>2003년</p>
+                <p>로맨스/코미디</p>
+                <p>2시간 9분</p>
+            </div>
+            <div class="content" id="alone">
+                <img src="../images/나홀로집에.jpg">
+                <h3>Home alone</h3>
+                <p>1990년</p>
+                <p>어린이/코미디</p>
+                <p>1시간 43분</p>
+            </div>
+            <div class="content" id="eternal">
+                <img src="../images/이터널선샤인.jpg">
+                <h3>Eternal Sunshine</h3>
+                <p>2004년</p>
+                <p>로맨스/SF</p>
+                <p>1시간 48분</p>
+            </div>
+        </main>
+        <aside>
+            <nav class="nav">
+                <h3>Content.</h3>
+                <p><a href="#love">- love</a></p>
+                <p><a href="#alone">- alone</a></p>
+                <p><a href="#eternal">- eternal</a></p>
+                <div class="back-home">
+                    <a href="../home.html">메인 페이지</a>
+                </div>     
+            </nav>
+        </aside>
+    </div>
+</body>
+</html>

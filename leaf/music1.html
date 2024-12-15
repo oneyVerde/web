@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>음악</title>
+    <style>
+        @font-face {
+            font-family: 'moneyFont';
+            src: url('../font/Moneygraphy-Rounded.ttf');
+        }
+        body {
+            margin: 0;
+            font-family: 'moneyFont';
+        }
+        
+        header {
+            background-color: #ffffff; /* 헤더 배경 색상 */
+            padding: 15px; /* 기존 30px에서 줄임 */
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 */
+        }
+        
+        header img {
+            width: 200px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        header h3 {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
+        .layout {
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 3;
+            background-color: #ceecff; /* 메인 배경 색상 */
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* 모서리 */
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        .content h3 {
+           font-size: 1.2em;
+           margin-bottom: 8px;
+           font-weight: bold;
+        }
+        .content p {
+           font-size: 0.9em;
+           color: black;
+        }
+
+        aside {
+            flex: 0.7;
+            background-color: #f0f0f0; /* 사이드바 배경 색상 */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        aside h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        aside p {
+            font-size: 1em;
+            color: #555;
+        }
+        aside .nav {
+            position: fixed;
+            text-align: center;
+            top: 30%;
+            left: 85%;
+        }
+        aside .nav a {
+            margin: 0 15px;
+            font-size: 1.2em;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+        aside .nav a:hover {
+            color: #0000ff;
+        }
+        aside .back-home {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #ffcccb; /* 박스 배경색 (연한 빨강) */
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 */
+        }
+
+        aside .back-box a {
+            font-size: 1.2em;
+            color: #333; /* 텍스트 색상 */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        aside .back-home a:hover {
+            color: #ff0000; /* 호버 시 텍스트 색상 (빨강) */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/로고.jpg" alt="로고">
+        <h3>크리스마스 캐롤은 연말의 따뜻한 분위기와 기쁨을 더해주는 전통적인 음악입니다. </h3>
+        <h3>성탄절을 맞이하며 가족과 친구들이 함께 모여 부르거나, 거리와 가정에서 흘러나와 사람들에게 사랑과 희망을 전달하죠.</h3>
+    </header>
+    <div class="layout">
+        <main>
+            <div class="content">
+                <h3>크리스마스 캐롤</h3>
+                <p>크리스마스 캐롤은 단순한 노래 그 이상으로, 우리에게 사랑과 나눔, 그리고 소망을 상기시키는 중요한 역할을 하고 있습니다.</p>
+                <p>올해 크리스마스에는 마음을 따뜻하게 해줄 캐롤을 들으며, 소중한 사람들과 행복한 시간을 보내세요.</p>
+            </div>
+            <div class="content" id="AllIwantfor">
+                <img src="../images/allIwantfor.jpg">
+                <h3>All I want for christmas is you</h3>
+                <p>머라이어 캐리와 저스틴 비버의 노래</p>
+                <p>Oh, I just want you for my own</p>
+                <p>More than you could ever know</p>
+                <p>Make my wish come true</p>
+                <p>Oh, baby, all I want for Christmas is you</p>
+                <p>You, baby</p>
+            </div>
+            <div class="content" id="Santatellme">
+                <img src="../images/santa.jpg">
+                <h3>Santa tell me</h3>
+                <p>아리아나 그란데의 노래</p>
+                <p>Santa, tell me if you're really there</p>
+                <p>Don't make me fall in love again</p>
+                <p>If he won't be here next year</p>
+                <p>Santa, tell me if he really cares</p>
+                <p>'Cause I can't give it all away</p>
+                <p>If he won't be here next year</p>
+            </div>
+            <div class="content" id="LastChristmas">
+                <img src="../images/last.png">
+                <h3>Last Christmas</h3>
+                <p>Wham!의 노래</p>
+                <p>Last Christmas, I gave you my heart</p>
+                <p>But the very next day, you gave it away</p>
+                <p>This year, to save me from tears</p>
+                <p>I'll give it to someone special</p>
+            </div>
+        </main>
+        <aside>
+            <nav class="nav">
+                <h3>Content.</h3>
+                <p><a href="#AllIwantfor">- All I want</a></p>
+                <p><a href="#Santatellme">- Santa</a></p>
+                <p><a href="#LastChristmas">- Last</a></p>
+                <div class="back-home">
+                    <a href="../home.html">메인 페이지</a>
+                </div>     
+            </nav>
+        </aside>
+    </div>
+</body>
+</html>

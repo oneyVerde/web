@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>음악</title>
+    <style>
+        @font-face {
+            font-family: 'moneyFont';
+            src: url('../../font/Moneygraphy-Rounded.ttf');
+        }
+        body {
+            margin: 0;
+            font-family: 'moneyFont';
+        }
+        
+        header {
+            background-color: #ffffff; /* 헤더 배경 색상 */
+            padding: 15px; /* 기존 30px에서 줄임 */
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 */
+        }
+        
+        header img {
+            width: 200px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        header h3 {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
+        .layout {
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 3;
+            background-color: #ceecff; /* 메인 배경 색상 */
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* 모서리 */
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        .content h3 {
+           font-size: 1.2em;
+           margin-bottom: 8px;
+           font-weight: bold;
+        }
+        .content p {
+           font-size: 0.9em;
+           color: black;
+        }
+
+        aside {
+            flex: 0.7;
+            background-color: #f0f0f0; /* 사이드바 배경 색상 */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        aside h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        aside p {
+            font-size: 1em;
+            color: #555;
+        }
+        aside .nav {
+            position: fixed;
+            text-align: center;
+            top: 30%;
+            left: 85%;
+        }
+        aside .nav a {
+            margin: 0 15px;
+            font-size: 1.2em;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+        aside .nav a:hover {
+            color: #0000ff;
+        }
+        aside .back-home {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #ffcccb; /* 박스 배경색 (연한 빨강) */
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 */
+        }
+
+        aside .back-box a {
+            font-size: 1.2em;
+            color: #333; /* 텍스트 색상 */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        aside .back-home a:hover {
+            color: #ff0000; /* 호버 시 텍스트 색상 (빨강) */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/로고.jpg" alt="로고">
+        <h3>겨울의 차가운 공기와 얼어붙은 풍경 속에서, 재즈는 그 어느 때보다도 따뜻하고 포근한 음악으로 다가옵니다.</h3>
+        <h3>차가운 겨울날, 겨울 재즈의 선율은 마음을 녹이고, 하루의 피로를 풀어주는 특별한 힘을 가집니다.</h3>
+    </header>
+    <div class="layout">
+        <main>
+            <div class="content">
+                <h3>겨울 재즈</h3>
+                <p>재즈 음악은 그 자체로 자유롭고, 감성적이며, 때로는 신비로운 분위기를 자아냅니다.</p>
+                <p>겨울 재즈는 이 특성이 더욱 강조되는 계절입니다.</p>
+                <p>특히, 로맨틱한 분위기와 차분한 템포가 돋보이는 곡들이 많아, 겨울날의 고요하고 서정적인 분위기와 완벽하게 맞아떨어집니다.</p>
+                <p>클래식한 보컬 재즈나 스윙부터 퓨전 재즈, 모던 재즈까지, 겨울 재즈의 다양한 장르는 모두 겨울의 차가운 공기와 잘 어울립니다.</p>
+            </div>
+            <div class="content" id="렛잇스노우">
+                <img src="../images/렛잇스노우.jpeg">
+                <h3>Let it snow! Let it snow! Let it snow!</h3>
+                <p>딘 마틴의 노래</p>
+                <p>겨울 재즈를 즐길 때 빠질 수 없는 명곡</p>
+                <p>클래식한 재즈 캐롤은 겨울의 따뜻한 분위기를 한층 더 고조시킵니다.</p>
+            </div>
+            <div class="content" id="크리스마스재즈">
+                <img src="../images/크리스마스재즈.jpeg">
+                <h3>The Christmas Song</h3>
+                <p>크리스마스 분위기가 물씬 나는 재즈</p>
+                <p>겨울의 정취와 완벽하게 어울리는 재즈 보컬 명곡입니다.</p>
+                <p>다양한 가수들이 해당 곡을 커버했습니다.</p>
+                <p>좋아하는 가수가 부르는 크리스마스 재즈송을 찾아보세요!</p>
+            </div>
+            <div class="content" id="챗베이커">
+                <img src="../images/챗베이커.jpg">
+                <h3>Chet Baker</h3>
+                <p>미국의 재즈 연주가</p>
+                <p>Chet Baker의 아름다운 피아노와 트럼펫 연주는 겨울의 고요한 오후에 듣기 좋은 음악을 선사합니다.</p>
+            </div>
+        </main>
+        <aside>
+            <nav class="nav">
+                <h3>Content.</h3>
+                <p><a href="#렛잇스노우">- 렛잇스노우</a></p>
+                <p><a href="#크리스마스재즈">- 크리스마스</a></p>
+                <p><a href="#챗베이커">- 챗베이커</a></p>
+                <div class="back-home">
+                    <a href="../home.html">메인 페이지</a>
+                </div>     
+            </nav>
+        </aside>
+    </div>
+</body>
+</html>

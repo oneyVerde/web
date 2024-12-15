@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>음악</title>
+    <style>
+        @font-face {
+            font-family: 'moneyFont';
+            src: url('../font/Moneygraphy-Rounded.ttf');
+        }
+        body {
+            margin: 0;
+            font-family: 'moneyFont';
+        }
+        
+        header {
+            background-color: #ffffff; /* 헤더 배경 색상 */
+            padding: 15px; /* 기존 30px에서 줄임 */
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 */
+        }
+        
+        header img {
+            width: 200px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        header h3 {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
+        .layout {
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 3;
+            background-color: #ceecff; /* 메인 배경 색상 */
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* 모서리 */
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        .content h3 {
+           font-size: 1.2em;
+           margin-bottom: 8px;
+           font-weight: bold;
+        }
+        .content p {
+           font-size: 0.9em;
+           color: black;
+        }
+
+        aside {
+            flex: 0.7;
+            background-color: #f0f0f0; /* 사이드바 배경 색상 */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        aside h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        aside p {
+            font-size: 1em;
+            color: #555;
+        }
+        aside .nav {
+            position: fixed;
+            text-align: center;
+            top: 30%;
+            left: 85%;
+        }
+        aside .nav a {
+            margin: 0 15px;
+            font-size: 1.2em;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+        aside .nav a:hover {
+            color: #0000ff;
+        }
+        aside .back-home {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #ffcccb; /* 박스 배경색 (연한 빨강) */
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 */
+        }
+
+        aside .back-box a {
+            font-size: 1.2em;
+            color: #333; /* 텍스트 색상 */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        aside .back-home a:hover {
+            color: #ff0000; /* 호버 시 텍스트 색상 (빨강) */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/로고.jpg" alt="로고">
+        <h3>겨울은 차갑고 쓸쓸한 계절이지만, 그 속에서 발라드는 특별한 따뜻함을 선사합니다. </h3>
+        <h3>겨울 발라드는 그 자체로 깊고 서정적인 감정을 담고 있으며, 차가운 바람이 스치고 눈이 내리는 풍경 속에서 더욱 빛을 발합니다.</h3>
+    </header>
+    <div class="layout">
+        <main>
+            <div class="content">
+                <h3>겨울 발라드</h3>
+                <p>겨울 발라드는 차분하고 감성적인 분위기에서 시작합니다.</p>
+                <p>서정적인 멜로디와 감미로운 보컬이 어우러져, 듣는 이의 마음을 따뜻하게 감싸줍니다.</p>
+                <p>이 노래들은 고요한 겨울밤, 눈 내리는 거리, 혼자 있는 시간에 특히 잘 어울리며, 겨울의 쓸쓸함을 감싸 안는 듯한 느낌을 줍니다.</p>
+                    
+                <p>특히, 겨울 발라드는 사랑이나 이별, 그리움 등 감정적인 요소가 깊이 묻어나는 경우가 많습니다.</p>
+                <p>이런 감정선은 겨울의 차가운 공기 속에서 더 강하게 와 닿으며, 우리 마음의 구석구석을 어루만져줍니다.</p>
+            </div>
+            <div class="content" id="정승환">
+                <img src="../images/정승환.jpg">
+                <h3>눈사람</h3>
+                <p>정승환의 노래</p>
+                <p>꽃잎이 번지면</p>
+                <p>그럼에도 새로운 봄이 오겠죠</p>
+                <p>한참이 걸려도</p>
+                <p>그대 반드시 행복해지세요</p>
+            </div>
+            <div class="content" id="성시경">
+                <img src="../images/너의모든순간.jpg">
+                <h3>너의 모든 순간</h3>
+                <p>성시경의 노래</p>
+                <p>거기 있어줘서 그게 너라서</p>
+                <p>가끔 나에게 조용하게 안겨주어서</p>
+                <p>나는 있잖아 정말 남김없이 고마워</p>
+                <p>너를 따라서 시간은 흐르고 멈춰</p>
+            </div>
+            <div class="content" id="정준일">
+                <img src="../images/첫눈.jpg">
+                <h3>첫눈</h3>
+                <p>정준일의 노래</p>
+                <p>내겐 그림 같았던 그대와 기억</p>
+                <p>아주 오래 기다렸던 선물같은 하루</p>
+                <p>긴 시간을 건너서 네게 닿을게</p>
+                <p>내 마음에 첫눈이던 그대</p>
+            </div>
+        </main>
+        <aside>
+            <nav class="nav">
+                <h3>Content.</h3>
+                <p><a href="#정승환">- 정승환</a></p>
+                <p><a href="#성시경">- 성시경</a></p>
+                <p><a href="#정준일">- 정준일</a></p>
+
+                <div class="back-home">
+                    <a href="../home.html">메인 페이지</a>
+                </div>     
+            </nav>
+        </aside>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>여가</title>
+    <style>
+        @font-face {
+            font-family: 'moneyFont';
+            src: url('../font/Moneygraphy-Rounded.ttf');
+        }
+        body {
+            margin: 0;
+            font-family: 'moneyFont';
+        }
+        
+        header {
+            background-color: #ffffff; /* 헤더 배경 색상 */
+            padding: 15px; /* 기존 30px에서 줄임 */
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 */
+        }
+        
+        header img {
+            width: 200px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        header h3 {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
+        .layout {
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 3;
+            background-color: #ceecff; /* 메인 배경 색상 */
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* 모서리 */
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        .content h3 {
+           font-size: 1.2em;
+           margin-bottom: 8px;
+           font-weight: bold;
+        }
+        .content p {
+           font-size: 0.9em;
+           color: black;
+        }
+
+        aside {
+            flex: 0.7;
+            background-color: #f0f0f0; /* 사이드바 배경 색상 */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        aside h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        aside p {
+            font-size: 1em;
+            color: #555;
+        }
+        aside .nav {
+            position: fixed;
+            text-align: center;
+            top: 30%;
+            left: 85%;
+        }
+        aside .nav a {
+            margin: 0 15px;
+            font-size: 1.2em;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+        aside .nav a:hover {
+            color: #0000ff;
+        }
+        aside .back-home {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #ffcccb; /* 박스 배경색 (연한 빨강) */
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 */
+        }
+
+        aside .back-box a {
+            font-size: 1.2em;
+            color: #333; /* 텍스트 색상 */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        aside .back-home a:hover {
+            color: #ff0000; /* 호버 시 텍스트 색상 (빨강) */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/로고.jpg" alt="로고">
+        <h3>차가운 겨울 날, 눈이 내리는 날에 밖에 나가 눈사람을 만드는 것은 그 자체로 특별한 경험이 됩니다.</h3>
+        <h3>눈사람 만들기는 단순히 눈을 쌓는 것처럼 보일 수 있지만, 그 속에는 상상력과 창의력을 발휘하며, 가족과 친구들이 함께 즐길 수 있는 활동이기도 합니다.</h3>
+    </header>
+    <div class="layout">
+        <main>
+            <div class="content">
+                <h3>눈사람 만들기</h3>
+                <p>눈사람은 단순한 겨울 놀이를 넘어 겨울의 아름다움과 가족, 친구들과의 유대감을 느낄 수 있는 활동입니다.</p>
+                <p>눈이 내리면 밖으로 나가 손과 발이 시릴 정도로 눈을 만지며 함께 만드는 눈사람은 잊지 못할 추억을 남기기 좋은 활동입니다.</p>
+                <p>올 겨울, 눈이 내리면 가족과 친구들과 함께 밖으로 나가, 따뜻한 마음으로 눈사람을 만들어보세요.</p>
+                <p>그 순간만큼은 모든 것이 멈추고, 눈사람과 함께한 특별한 시간이 여러분의 마음을 따뜻하게 채워줄 것입니다.</p>
+            </div>
+            <div class="content" id="1">
+                <img src="../images/눈사람3.jpg">
+                <h3>눈사람 만들기의 기본</h3>
+                <p>눈사람을 만드는 과정은 그리 복잡하지 않지만, 그 단순함 속에서 큰 즐거움과 만족을 느낄 수 있습니다.</p>
+                <p>기본적으로 세 개의 큰 눈덩이를 만들고, 그것들을 차례대로 쌓아 올리는 것으로 시작됩니다.</p>
+                <p>가장 큰 덩어리가 아래쪽에 오고, 점점 작아지는 덩어리를 차례로 올리면 자연스럽게 눈사람의 형태가 완성됩니다.</p>
+            </div>
+            <div class="content" id="2">
+                <img src="../images/눈사람4.jpg">
+                <h3>눈사람을 만드는 즐거움</h3>
+                <p>눈덩이를 쌓은 후, 각기 다른 방법으로 눈사람을 꾸미는 과정은 사람마다 다를 수 있습니다. </p>
+                <p>예를 들어, 당근을 코로, 단추나 돌을 눈으로, 모자와 스카프를 장식으로 쓰면 눈사람은 그 자체로 생명력을 얻습니다.</p>
+                <p>1이러한 장식들은 단순한 눈사람에 특별한 개성을 부여하며, 자신만의 독특한 눈사람을 만들 수 있는 기회를 제공합니다.</p>
+            </div>
+            <div class="content" id="3">
+                <img src="../images/눈사람5.jpg">
+                <h3>눈사람 만들기의 매력</h3>
+                <p>눈사람 만들기는 단순히 눈을 쌓는 것 이상의 의미가 있습니다.</p>
+                <p>겨울의 추위 속에서도 따뜻한 마음과 협동을 느낄 수 있는 활동이기 때문입니다. </p>
+                <p>친구들이나 가족과 함께 눈을 쌓고, 웃음 속에서 눈사람을 완성하는 과정은 소중한 추억으로 남습니다.</p>
+                <p>또한, 만들고 나서 완성된 눈사람을 바라보며 뿌듯함을 느끼는 순간은 그 어떤 일보다도 큰 보람을 안겨줍니다.</p>
+            </div>
+        </main>
+        <aside>
+            <nav class="nav">
+                <h3>Content.</h3>
+                <p><a href="#1">- 만들기</a></p>
+                <p><a href="#2">- 즐거움</a></p>
+                <p><a href="#3">- 매력</a></p>
+                <div class="back-home">
+                    <a href="../home.html">메인 페이지</a>
+                </div>     
+            </nav>
+        </aside>
+    </div>
+</body>
+</html>
