@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>옷</title>
+    <style>
+        @font-face {
+            font-family: 'moneyFont';
+            src: url('Moneygraphy-Rounded.ttf');
+        }
+        body {
+            margin: 0;
+            font-family: 'moneyFont';
+        }
+        
+        header {
+            background-color: #ffffff; /* 헤더 배경 색상 */
+            padding: 15px; /* 기존 30px에서 줄임 */
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 */
+        }
+        
+        header img {
+            width: 200px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        header h3 {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
+        .layout {
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 3;
+            background-color: #ceecff; /* 메인 배경 색상 */
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* 모서리 */
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        .content h3 {
+           font-size: 1.2em;
+           margin-bottom: 8px;
+           font-weight: bold;
+        }
+        .content p {
+           font-size: 0.9em;
+           color: black;
+        }
+
+        aside {
+            flex: 0.7;
+            background-color: #f0f0f0; /* 사이드바 배경 색상 */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        aside h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        aside p {
+            font-size: 1em;
+            color: #555;
+        }
+        aside .nav {
+            position: fixed;
+            text-align: center;
+            top: 30%;
+            left: 85%;
+        }
+        aside .nav a {
+            margin: 0 15px;
+            font-size: 1.2em;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+        aside .nav a:hover {
+            color: #0000ff;
+        }
+        aside .back-home {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #ffcccb; /* 박스 배경색 (연한 빨강) */
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 */
+        }
+
+        aside .back-box a {
+            font-size: 1.2em;
+            color: #333; /* 텍스트 색상 */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        aside .back-home a:hover {
+            color: #ff0000; /* 호버 시 텍스트 색상 (빨강) */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/로고.jpg" alt="로고">
+        <h3>겨울을 따뜻하게 보낼 수 있는 장갑은 보온성과 활동성을 고려해 선택하는 것이 좋습니다.</h3>
+        <h3>상황에 따라 장갑을 선택하여 윤택한 겨울 보내세요.</h3>
+    </header>
+    <div class="layout">
+        <main>
+            <div class="content" id="털장갑">
+                <img src="../images/털장갑.jpg">
+                <h3>털장갑</h3>
+                <p>울, 플리스, 니트 소재로 되어있는 장갑을 선택하는 것이 좋습니다.</p>
+                <p>방한성에 초점을 두었지만 가볍고 폭신폭신한 촉감에 많은 사람들의 사랑을 받는 장갑입니다.</p>
+                <p>캐주얼한 스타일을 연출하기에 적합하여 일상에서 착용하기 좋은 장갑입니다.</p>
+                <p>그러나 습기에 약해 눈이나 비가 오는 날에는 방수 기능이 부족할 수 있습니다.</p>
+                <p>또한 털은 오래 사용하면 털이 뭉치거나 빠질 수 있어 관리가 필요합니다.</p>
+                <p>활동적인 야외 스포츠보다는 일상적인 외출이나 가벼운 산책에 착용해보면 어떨까요?</p>
+
+            </div>
+            <div class="content" id="가죽장갑">
+                <img src="../images/가죽장갑.jpg">
+                <h3>가죽장갑</h3>
+                <p>가죽장갑은 고급스러운 외관과 뛰어난 내구성으로 겨울철 인기 있는 방한 아이템입니다.</p>
+                <p>바람을 효과적으로 막아주어 보온성이 우수하며, 착용할수록 손에 맞게 길들여져 편안한 핏을 제공합니다.</p>
+                <p>방수 성능이 기본적으로 좋지만, 가죽 관리가 소홀하면 갈라지거나 변색될 수 있습니다.</p>
+                <p>터치 스크린 기능이 있는 제품도 많아 실용적이며, 일상부터 비즈니스 룩까지 다양한 스타일에 잘 어울립니다.</p>
+                <p>관리 시 가죽 전용 크림을 발라주면 장갑의 수명을 연장할 수 있습니다.</p>
+                </div>
+            <div class="content" id="벙어리장갑">
+                <img src="../images/벙어리장갑.jpg">
+                <h3>벙어리장갑</h3>
+                <p>벙어리 장갑은 손가락이 하나의 공간에 모여 있어 보온성이 뛰어납니다.</p>
+                <p>추운 겨울철 야외 활동 시 열 손실을 최소화해 손을 따뜻하게 유지합니다.</p>
+                <p>손가락이 분리된 장갑보다 세밀한 작업이 어렵지만 방한 효과는 더 우수합니다.</p>
+                <p>스키, 스노보드 등 겨울 스포츠나 강추위 환경에 적합합니다.</p>
+                <p>방수 및 방풍 기능이 있는 소재를 선택하면 더욱 실용적으로 사용할 수 있습니다.</p>
+            </div>
+            <div class="content" id="터치장갑">
+                <img src="../images/터치장갑.png">
+                <h3>터치장갑</h3>
+                <p>터치장갑은 장갑을 낀 상태에서도 스마트폰이나 태블릿을 사용할 수 있는 실용적인 아이템입니다.</p>
+                <p>손가락 끝 부분에 전도성 소재가 적용되어 터치 스크린과의 상호 작용이 가능합니다.</p>
+                <p>일상적인 외출이나 출퇴근 시 스마트 기기를 자주 사용하는 사람들에게 특히 유용합니다.</p>
+                <p>니트, 가죽 등 다양한 소재로 제작되어 스타일과 보온성을 동시에 제공합니다.</p>
+                <p>전도성 소재의 내구성을 고려해 품질 좋은 제품을 선택하는 것이 중요합니다.</p>
+
+            </div>
+            <div class="content" id="스키장갑">
+                <img src="../images/스키장갑.png">
+                <h3>스키장갑</h3>
+                <p>스키장갑은 추운 겨울철 스키나 스노보드 등 야외 스포츠 활동에 필수적인 방한 장비입니다.</p>
+                <p>방수와 방풍 기능이 있어 눈과 찬바람으로부터 손을 보호합니다.</p>
+                <p>두툼한 충전재가 있어 보온성이 뛰어나며, 손을 따뜻하게 유지해줍니다.</p>
+                <p>강화된 손목 스트랩과 조임 장치로 착용감을 조절하고 눈이 들어오는 것을 방지합니다.</p>
+                <p>내구성이 우수해 거친 야외 환경에서도 오래 사용할 수 있습니다.</p>
+
+            </div>
+        </main>
+        <aside>
+            <nav class="nav">
+                <h3>Content.</h3>
+                <p><a href="#털장갑">- 털장갑</a></p>
+                <p><a href="#가죽장갑">- 가죽장갑</a></p>
+                <p><a href="#벙어리장갑">- 벙어리장갑</a></p>
+                <p><a href="#터치장갑">- 터치장갑</a></p>
+                <p><a href="#스키장갑">- 스키장갑</a></p>
+
+                <div class="back-home">
+                    <a href="../home.html">메인 페이지</a>
+                </div>     
+            </nav>
+        </aside>
+    </div>
+</body>
+</html>
