@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>간식_붕어빵</title>
+    <style>
+        @font-face {
+            font-family: 'moneyFont';
+            src: url('../font/Moneygraphy-Rounded.ttf');
+        }
+        body {
+            margin: 0;
+            font-family: 'moneyFont';
+        }
+        
+        header {
+            background-color: #ffffff; /* 헤더 배경 색상 */
+            padding: 15px; /* 기존 30px에서 줄임 */
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 */
+        }
+        
+        header img {
+            width: 200px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        header h3 {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
+        .layout {
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 3;
+            background-color: #ceecff; /* 메인 배경 색상 */
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* 모서리 */
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        .content h3 {
+           font-size: 1.2em;
+           margin-bottom: 8px;
+           font-weight: bold;
+        }
+        .content p {
+           font-size: 0.9em;
+           color: black;
+        }
+
+        aside {
+            flex: 0.7;
+            background-color: #f0f0f0; /* 사이드바 배경 색상 */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        aside h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        aside p {
+            font-size: 1em;
+            color: #555;
+        }
+        aside .nav {
+            position: fixed;
+            text-align: center;
+            top: 30%;
+            left: 85%;
+        }
+        aside .nav a {
+            margin: 0 15px;
+            font-size: 1.2em;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+        aside .nav a:hover {
+            color: #0000ff;
+        }
+        aside .back-home {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #ffcccb; /* 박스 배경색 (연한 빨강) */
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 */
+        }
+
+        aside .back-box a {
+            font-size: 1.2em;
+            color: #333; /* 텍스트 색상 */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        aside .back-home a:hover {
+            color: #ff0000; /* 호버 시 텍스트 색상 (빨강) */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/로고.jpg" alt="로고">
+        <h3>추운 겨울, 붕세권인 사람들이 진정한 승자죠~</h3>
+        <h3>찬 공기 속에 뜨겁고 바삭한 붕어빵을 한 입하면 그보다 행복할 수 없던 간식, 붕어빵을 소개합니다.</h3>
+    </header>
+    <div class="layout">
+        <main>
+            <div class="content" id="팥붕어빵">
+                <img src="../images/팥붕어빵.png">
+                <h3>팥 붕어빵</h3>
+                <p>가장 전통적인 맛인 팥붕어빵은 여러 연령층을 타깃으로 오랫동안 사랑받아왔습니다.</p>
+                <p>달콤한 팥소를 붕어빵 가득 넣어서 고소한 팥과 달콤바삭한 반죽이 만나 환상의 조화를 이룹니다.</p>
+                <p>팥소의 종류에 따라 달기도, 고소하기도 한 팥 붕어빵 먹어보는 것은 어떨까요?</p>
+            </div>
+            <div class="content" id="슈크림붕어빵">
+                <img src="../images/슈크림붕어빵.png">
+                <h3>슈크림 붕어빵</h3>
+                <p>달콤한 슈크림이 가득 들어간 슈크림 붕어빵은 예로부터 아이들의 사랑을 받아왔습니다.</p>
+                <p>추운 겨울 날, 뜨거운 슈크림을 먹으면서 행복해지기에 현재까지도 인기가 많은 붕어빵입니다.</p>
+            </div>
+            <div class="content" id="피자붕어빵">
+                <img src="../images/피자붕어빵.png">
+                <h3>피자 붕어빵</h3>
+                <p>이색 붕어빵으로 떠오르고 있는 붕어빵은 피자맛입니다.</p>
+                <p>다소 생소할 수 있지만 피자빵과 같은 친숙한 맛에 인기를 끌고있는 피자 붕어빵, 한번 시도해보세요!</p>
+            </div>
+            <div class="content" id="치즈붕어빵">
+                <img src="../images/치즈붕어빵.png">
+                <h3>치즈 붕어빵</h3>
+                <p>치즈 붕어빵은 치즈의 고소하고 짭조름한 맛을 즐길 수 있습니다.</p>
+                <p>한입 크기로도 나와 간식으로 딱인 치즈 붕어빵은 치즈를 충분히 녹여서 먹으면 더 맛있습니다.</p>
+
+            </div>
+        </main>
+        <aside>
+            <nav class="nav">
+                <h3>Content.</h3>
+                <p><a href="#팥붕어빵">- 팥 붕어빵</a></p>
+                <p><a href="#슈크림붕어빵">- 슈크림 붕어빵</a></p>
+                <p><a href="#피자붕어빵">- 피자 붕어빵</a></p>
+                <p><a href="#치즈붕어빵">- 치즈 붕어빵</a></p>
+
+                <div class="back-home">
+                    <a href="../home.html">메인 페이지</a>
+                </div>     
+            </nav>
+        </aside>
+    </div>
+</body>
+</html>

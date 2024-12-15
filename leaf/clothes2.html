@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>옷_목도리</title>
+    <style>
+        @font-face {
+            font-family: 'moneyFont';
+            src: url('../font/Moneygraphy-Rounded.ttf');
+        }
+        body {
+            margin: 0;
+            font-family: 'moneyFont';
+        }
+        
+        header {
+            background-color: #ffffff; /* 헤더 배경 색상 */
+            padding: 15px; /* 기존 30px에서 줄임 */
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 */
+        }
+        
+        header img {
+            width: 200px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        header h3 {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
+        .layout {
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 3;
+            background-color: #ceecff; /* 메인 배경 색상 */
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* 모서리 */
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        .content h3 {
+           font-size: 1.2em;
+           margin-bottom: 8px;
+           font-weight: bold;
+        }
+        .content p {
+           font-size: 0.9em;
+           color: black;
+        }
+
+        aside {
+            flex: 0.7;
+            background-color: #f0f0f0; /* 사이드바 배경 색상 */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        aside h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        aside p {
+            font-size: 1em;
+            color: #555;
+        }
+        aside .nav {
+            position: fixed;
+            text-align: center;
+            top: 30%;
+            left: 85%;
+        }
+        aside .nav a {
+            margin: 0 15px;
+            font-size: 1.2em;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+        aside .nav a:hover {
+            color: #0000ff;
+        }
+        aside .back-home {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #ffcccb; /* 박스 배경색 (연한 빨강) */
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 */
+        }
+
+        aside .back-box a {
+            font-size: 1.2em;
+            color: #333; /* 텍스트 색상 */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        aside .back-home a:hover {
+            color: #ff0000; /* 호버 시 텍스트 색상 (빨강) */
+        }
+        
+        /* Carousel 부분 수정 */
+        .carousel {
+            display: flex;
+            flex-wrap: wrap; /* 줄바꿈을 허용하여 두 개씩 배치 */
+            gap: 20px;
+            justify-content: space-between; /* 항목 간의 간격을 균등하게 분배 */
+            width: 100%;
+        }
+
+        .slide {
+            width: calc(50% - 10px); /* 두 개씩 배치할 수 있도록 너비를 50%로 설정 */
+            box-sizing: border-box;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .slide h3 {
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+
+        .slide p {
+            font-size: 0.9em;
+            color: black;
+        }
+
+        /* 제목과 이미지 간의 간격 조정 */
+        #목도리방법 {
+            margin-top: 30px; /* 제목 위에 공간 추가 */
+            margin-bottom: 40px; /* 이미지와 그 아래 글자 사이 간격 추가 */
+        }
+
+        h3 {
+            margin-top: 30px; /* 제목 위에 공간 추가 */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/로고.jpg" alt="로고">
+        <h3>겨울철 감기를 예방하고 추위를 막아주는 목도리는 어떤 기준으로 선택해야할까요?</h3>
+        <h3>연출하고자 하는 분위기와 착용감에 따라 목도리를 선택해보세요!</h3>
+    </header>
+    <div class="layout">
+        <main>
+            <h2>목도리 종류</h2>
+            <p>다른 분위기를 연출 할 수 있는 4가지 종류의 목도리를 소개합니다.</p>
+            <div class="content" id="니트목도리">
+                <img src="../images/니트목도리.png">
+                <h3>니트 목도리</h3>
+                <p>니트 목도리는 부드럽고 따뜻해 겨울철 일상적인 외출에 적합합니다.</p>
+                <p>다양한 패턴과 색상으로 캐주얼한 스타일을 연출하기 좋습니다.</p>
+                <p>착용감이 편안하며 가볍게 둘러도 충분한 보온성을 제공합니다.</p>
+                <p>세탁 시 수축이나 변형을 방지하려면 손세탁이 권장됩니다.</p>
+            </div>
+            <div class="content" id="울목도리">
+                <img src="../images/울목도리.png">
+                <h3>울 목도리</h3>
+                <p>울 목도리는 보온성이 매우 뛰어나 겨울철 추위를 막아줍니다.</p>
+                <p>클래식하고 고급스러운 디자인으로 비즈니스 및 격식 있는 자리에도 잘 어울립니다.</p>
+                <p>내구성이 강하지만 세탁 시 울 전용 세제를 사용해야 변형을 막을 수 있습니다.</p>
+                <p>가을부터 겨울까지 다양한 스타일링에 활용할 수 있습니다.</p>
+            </div>
+            <div class="content" id="캐시미어목도리">
+                <img src="../images/캐시미어목도리.png">
+                <h3>캐시미어 목도리</h3>
+                <p>캐시미어 목도리는 부드러운 촉감과 고급스러운 외관으로 인기 있는 제품입니다.</p>
+                <p>가볍지만 보온성이 뛰어나며 피부에 자극이 없어 민감한 피부에도 적합합니다.</p>
+                <p>가격대는 높은 편이지만 세련된 스타일링을 완성할 수 있습니다.</p>
+                <p>관리 시 드라이클리닝을 권장해 오랜 사용이 가능합니다.</p>
+            </div>
+            <div class="content" id="플리스목도리">
+                <img src="../images/플리스목도리.png">
+                <h3>플리스 목도리</h3>
+                <p>플리스 목도리는 가볍고 부드러워 편안한 착용감을 제공합니다.</p>
+                <p>추운 날씨에 보온성이 우수하며 야외 활동이나 스포츠에 적합합니다.</p>
+                <p>세탁이 쉽고 관리가 편리해 실용성이 뛰어납니다.</p>
+                <p>다양한 색상과 디자인으로 캐주얼한 겨울 패션 아이템으로 활용 가능합니다.</p>
+            </div>
+
+            <h2>목도리 매는 방법 5가지!!</h2>
+
+            <img src="../images/목도리방법.png" id="목도리방법">
+
+            <div class="carousel">
+                <div class="slide">
+                    <h3>기본 드레이프 (Simple Drape)</h3>
+                    <p>목도리를 목에 걸치고 양쪽 끝을 앞쪽으로 늘어뜨립니다.</p>
+                    <p>간단하면서 세련된 느낌, 격식 있는 스타일에 적합합니다.</p>
+                </div>
+                <div class="slide">
+                    <h3>한 번 묶기 (Once Around)</h3>
+                    <p>목도리 한쪽을 길게 늘어뜨리고, 긴 쪽을 목에 한 번 감아 늘어뜨립니다.</p>
+                    <p>보온성과 편안함을 동시에 제공, 캐주얼 스타일에 어울립니다.</p>
+                </div>
+                <div class="slide">
+                    <h3>루프 노트 (Parisian Knot)</h3>
+                    <p>목도리를 반으로 접어 목에 걸치고 접힌 쪽으로 끝을 통과시킵니다.</p>
+                    <p>심플하고 단정한 느낌, 비즈니스나 격식 있는 자리에서 적합합니다.</p>
+                </div>
+                <div class="slide">
+                    <h3>목에 두 번 감기 (Double Loop)</h3>
+                    <p>목도리를 한 번 감고, 끝을 다시 한 번 감아 두 번 감는 스타일입니다.</p>
+                    <p>추운 날씨에 효과적이며, 클래식한 스타일에 어울립니다.</p>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <nav class="nav">
+                <h3>Content.</h3>
+                <p><a href="#니트목도리">- 니트 목도리</a></p>
+                <p><a href="#울목도리">- 울 목도리</a></p>
+                <p><a href="#캐시미어목도리">- 캐시미어 목도리</a></p>
+                <p><a href="#플리스목도리">- 플리스 목도리</a></p>
+                <p><a href="#목도리방법">- 목도리 매는 방법</a></p>
+
+                <div class="back-home">
+                    <a href="../home.html">메인 페이지</a>
+                </div>     
+            </nav>
+        </aside>
+    </div>
+</body>
+</html>

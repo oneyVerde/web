@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>간식_호빵</title>
+    <style>
+        @font-face {
+            font-family: 'moneyFont';
+            src: url('../font/Moneygraphy-Rounded.ttf');
+        }
+        body {
+            margin: 0;
+            font-family: 'moneyFont';
+        }
+        
+        header {
+            background-color: #ffffff; /* 헤더 배경 색상 */
+            padding: 15px; /* 기존 30px에서 줄임 */
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 */
+        }
+        
+        header img {
+            width: 200px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        header h3 {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
+        .layout {
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 3;
+            background-color: #ceecff; /* 메인 배경 색상 */
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* 모서리 */
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        .content h3 {
+           font-size: 1.2em;
+           margin-bottom: 8px;
+           font-weight: bold;
+        }
+        .content p {
+           font-size: 0.9em;
+           color: black;
+        }
+
+        aside {
+            flex: 0.7;
+            background-color: #f0f0f0; /* 사이드바 배경 색상 */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        aside h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        aside p {
+            font-size: 1em;
+            color: #555;
+        }
+        aside .nav {
+            position: fixed;
+            text-align: center;
+            top: 30%;
+            left: 85%;
+        }
+        aside .nav a {
+            margin: 0 15px;
+            font-size: 1.2em;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+        aside .nav a:hover {
+            color: #0000ff;
+        }
+        aside .back-home {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #ffcccb; /* 박스 배경색 (연한 빨강) */
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 */
+        }
+
+        aside .back-box a {
+            font-size: 1.2em;
+            color: #333; /* 텍스트 색상 */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        aside .back-home a:hover {
+            color: #ff0000; /* 호버 시 텍스트 색상 (빨강) */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/로고.jpg" alt="로고">
+        <h3>겨울철 편의점에 가면 먹을 수 있는 간식, 호빵을 소개합니다.</h3>
+        <h3>든든하게 배를 채워주는 호빵의 종류와 구성을 알려드려요.</h3>
+    </header>
+    <div class="layout">
+        <main>
+            <div class="content" id="팥호빵">
+                <img src="../images/팥호빵.png">
+                <h3>팥 호빵</h3>
+                <p>팥호빵은 가장 전통적인 호빵으로, 부드러운 호빵 속에 달콤한 팥소가 가득 들어 있습니다.</p>
+                <p>겨울철 따뜻한 간식으로 사랑받으며, 간단하게 먹기 좋은 간식입니다.</p>
+                <p>기본적인 맛을 선호하는 사람들에게 인기가 많습니다.</p>
+            </div>
+            <div class="content" id="김치호빵">
+                <img src="../images/김치호빵.png">
+                <h3>김치 호빵</h3>
+                <p>김치호빵은 호빵 속에 매콤한 김치와 고기가 들어 있어, 매운 맛을 좋아하는 사람들에게 적합합니다.</p>
+                <p>칼칼한 맛이 입맛을 돋우며, 간식뿐만 아니라 간단한 한 끼로도 좋습니다.</p>
+                <p>매운 음식을 좋아하는 사람들에게 추천하는 호빵입니다.</p>
+                </div>
+            <div class="content" id="야채호빵">
+                <img src="../images/야채호빵.png">
+                <h3>야채 호빵</h3>
+                <p>야채호빵은 호빵 속에 다양한 채소가 들어 있어, 건강한 맛을 선호하는 사람들에게 적합합니다.</p>
+                <p>브로콜리, 당근, 양파 등의 익힌 야채들이 속재료로 사용되어 풍부한 맛을 제공합니다.</p>
+                <p>야채와 고기가 어루러진 야채 호빵도 있으니 원하는 맛으로 즐겨보세요.</p>
+            </div>
+            <div class="content" id="피자호빵">
+                <img src="../images/피자호빵.png">
+                <h3>피자 호빵</h3>
+                <p>피자호빵은 호빵 속에 피자 소스, 치즈, 햄 등이 들어 있어, 피자 맛을 좋아하는 사람들에게 인기가 많습니다.</p>
+                <p>고소한 치즈와 짭짤한 토핑이 어우러져, 간식으로 손색없는 맛을 자랑합니다.</p>
+                <p>간편하게 피자 맛을 즐길 수 있어, 특히 아이들이 좋아합니다.</p>
+            </div>
+        </main>
+        <aside>
+            <nav class="nav">
+                <h3>Content.</h3>
+                <p><a href="#팥호빵">- 팥 호빵</a></p>
+                <p><a href="#김치호빵">- 김치 호빵</a></p>
+                <p><a href="#야채호빵">- 야채 호빵</a></p>
+                <p><a href="#피자호빵">- 피자 호빵</a></p>
+
+                <div class="back-home">
+                    <a href="../home.html">메인 페이지</a>
+                </div>     
+            </nav>
+        </aside>
+    </div>
+</body>
+</html>
